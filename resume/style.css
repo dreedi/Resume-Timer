@@ -1,0 +1,281 @@
+body {
+  background-color: #000000;
+  color: white;
+  font-family: 'TT Commons ', sans-serif;
+  margin: o auto;
+  padding: 0;
+}
+h1 {
+  font-family: 'Redcollar', sans-serif;
+  font-weight: 800;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 310px 1fr;
+  margin: 10px 40px 40px 40px;
+}
+
+.header_block {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  align-items: center;
+  margin-top: 26px;
+  margin-right: 40px;
+}
+
+.header_icon {
+  width: 162px;
+  height: 16px;
+}
+.logo_front {
+  display: flex;
+  position: relative;
+}
+.logo_front::before {
+  display: block;
+  background: url('icon/header\ 2.png');
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 20px;
+  content: '';
+  position: absolute;
+  right: 45px;
+  bottom: -1px;
+}
+
+.block_text {
+  margin-left: 32px;
+}
+
+.left-block {
+  display: flex;
+  flex-direction: column;
+  padding-right: 10px;
+}
+
+.img {
+  width: 320px;
+  height: 400px;
+  position: relative;
+  z-index: 2;
+}
+.img_block {
+  width: 320px;
+  height: 400px;
+  z-index: 1;
+}
+
+
+.block_contact {
+  position: relative;
+  background-color: #f51b1b;
+  border-radius: 24px 24px 0px 0px;
+  width: 320px;
+  z-index: 10;
+  margin-top: -24px;
+  padding-bottom: 50px;
+  padding-top: 23px;
+}
+.block_contact::after {
+  display: block;
+  background-image: url('icon/foto_block.png');
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 20px;
+  content: '';
+  position: absolute;
+  left: 40%;
+  top: -18px;
+}
+
+.contact_name {
+  font-size: 24px;
+
+  margin-left: 26px;
+}
+.contact_age {
+  font-size: 20px;
+  margin-top: 8px;
+  margin-left: 26px;
+  margin-bottom: 40px;
+}
+ul {
+  list-style-type: none;
+  margin-left: 26px;
+  flex-direction: column;
+  row-gap: 20px;
+}
+li {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+a[href^="mailto:"] {
+  display: inline-flex;
+  gap: 13px;
+  text-decoration: none;
+  color: white;
+}
+a[href^="tel:"] {
+  display: inline-flex;
+  gap: 13px;
+  text-decoration: none;
+  color: white;
+}
+.container_main {
+  margin-top: 80px;
+  border: 1px solid white;
+  margin-top: 33px;
+  margin-left: 32px;
+  position: relative;
+  z-index: 0;
+}
+.container_main::before {
+  display: block;
+  background-image: url('icon/border.png');
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 20px;
+  content: '';
+  position: absolute;
+  left: 6%;
+  top: -1px;
+  z-index: 5;
+}
+.container_main > div {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: baseline;
+}
+
+.main_title {
+  font-size: 18px;
+  margin-left: 27px;
+  margin-top: 47px;
+}
+
+.main_name {
+  font-size: 16px;
+  line-height: 24px;
+}
+.main_end {
+  display: inline;
+  margin-bottom: 10px;
+}
+.main_block > p {
+  font-size: 18px;
+  opacity: 0.4;
+  line-height: 30px;
+  position: relative;
+}
+.block_border_1,.block_border_2 {
+  position: relative;
+}
+.block_border_1::after {
+  position:absolute;
+ bottom: -160%;
+width:128%;
+  border-bottom: 1px solid white;
+  content:"";
+  left: -31%;
+}
+.block_border_2::after {
+
+    position:absolute;
+   bottom: -85%;
+  
+  
+    width:128%;
+    border-bottom: 1px solid white;
+    content:"";
+    left: -31%;
+ 
+}
+.block_table {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  margin-left: 0px;
+}
+.block_table > li {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.block_info {
+  margin-left: 0px;
+}
+
+@media (max-width: 365px) {
+  body {
+    box-sizing: border-box;
+  }
+  header {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  .header_block {
+    margin: 26px 0 0 0;
+    justify-content: center;
+  }
+  .container {
+    display: block;
+    margin: 0 auto;
+  }
+  .left_block {
+    display: flex;
+    width: 100%;
+    padding-right: 0px;
+  }
+  .left {
+    display: block;
+    margin: 0 auto;
+   
+  }
+  .img::before {
+    top: 323px;
+  }
+  .block_contact {
+    margin-bottom: 40px;
+  }
+  .block_table {
+    gap: 10px;
+  }
+
+  .block_table > li {
+    font-size: 16px;
+  }
+  .right_block {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .container_main {
+    margin-left: 0px;
+    margin-bottom: 60px;
+  }
+  .container_main > div {
+    display: block;
+    margin: 40px 20px;
+  }
+  .container_main::before {
+    left: 40%;
+  }
+
+  .block_border_1::after{
+    left: 0;
+    width: 100%;
+    bottom: -120%;
+  }
+
+  .block_border_2::after {
+    left: 0;
+    width: 100%;
+    bottom: -37%;
+  }
+  .block_text {
+    margin-left: 0px;
+  }
+ 
+}

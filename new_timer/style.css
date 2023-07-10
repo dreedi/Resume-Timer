@@ -1,0 +1,128 @@
+body {
+  margin: 0 auto;
+  box-sizing: border-box;
+  background: rgb(174, 175, 238);
+  background: radial-gradient(circle, rgba(174, 175, 238, 1) 0%, rgba(21, 20, 75, 1) 100%);
+  height: 100vh;
+  color: blue;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 3%;
+  width: 50%;
+  justify-content: center;
+  margin-top: 5%;
+  border-radius: 15px;
+  background-color: rgb(187 221 221 / 12%);
+  padding-bottom: 20px;
+}
+
+.btn_block {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  padding: 10px;
+  margin: 0 auto;
+  padding: 5px;
+}
+.block_option {
+  padding: 0;
+  border: none;
+  background: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 15px 5px;
+  color: #7b2004bf;
+  font-size: 16px;
+  font-weight: 800;
+}
+.block_option:hover {
+  cursor: pointer;
+}
+.block_title {
+  position: absolute;
+}
+
+.block_active {
+  font-size: 22px;
+
+  color: #7b2004db;
+  border-radius: 10px;
+  background-color: rgb(0 2 2 / 5%);
+}
+
+.block_timer {
+  display: flex;
+  margin-top: 10%;
+  align-items: center;
+}
+.btn_start {
+  width: 16%;
+  margin: 0 auto;
+  background-color: #cf9cd540;
+  border-radius: 15px;
+  padding: 20px;
+  transition: 0.2s ease-in-out;
+  color: #7b2004db;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.btn_start_action {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  transition: 0.2s ease-in-out;
+  background: #cc9ae5;
+}
+
+.timer {
+  margin: 0 auto;
+  font-size: 80px;
+  color: #1d4e31f5;
+  position: relative;
+}
+
+.btn_change {
+  display: flex;
+  padding: 3%;
+  width: 20%;
+  gap: 5%;
+}
+.btn_change > button {
+  width: 45%;
+  padding: 4px;
+  background-color: #cf9cd540;
+  border-radius: 15px;
+
+  transition: 0.2s ease-in-out;
+}
+.reset_btn {
+  width: 10%;
+  padding: 4px;
+  background-color: #e42ef940;
+  border-radius: 15px;
+  font-size: 16px;
+  transition: 0.2s ease-in-out;
+  font-weight: 600;
+  color: #7b2004db;
+}
+.breack {
+  display: none;
+}
+.longBreack {
+  display: none;
+}
+
+.timer_img {
+  width: 50%;
+  margin: 0 auto;
+}
+.img_down {
+  transform: rotate(180deg);
+}

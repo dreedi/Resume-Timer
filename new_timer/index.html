@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylesTodo.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+
+    <div class="container">
+<div class="btn_block">
+  <button id="work" class="block_option " onclick="poma()">  <p class="block_title">Pomodoro</p></button>
+<button id="short" class="block_option" onclick="shorten()"><p class="block_title">Short Break</p></button>
+<button id="long" class="block_option" onclick="longen()"><p class="block_title">Long Break</p></button>
+</div>
+<div class="block_timer">
+     <button id = "btn" class="btn_start ">Start</button>
+       <div id="timer" class="timer" >25:00</div>
+    <button  id="btn_reset" class="reset_btn">reset</button>
+    <div class="btn_change">
+      <button class="btn_add"><img class="timer_img" src="icon/1111.png" alt=""></button>
+    <button class="btn_remove"><img class="timer_img img_down" src="icon/1111.png" alt=""></button>
+    </div>
+
+  </div>
+  
+       
+
+       </div>
+  <div class="todo_list todo_list_title">
+    <div class="todo_title">List</div>
+    <ul class="task_list">
+
+    
+     
+    </ul>
+ 
+  <div class="block_todo">
+    <button class="btn_started"><img  class="btn_global"src="icon/global.png" alt=""></button>
+
+  <form id="form"  class="form_iner form_block">
+<div class="task_block"><input id="task_input" type="text" class="message" placeholder="Task">
+  <button class="add">Add Task</button></div>
+   
+   
+<div class="coment_block"> 
+  <button data-action="add_todo" class="btn_todo">Add Coment</button> 
+<div class="block_todoss">
+  
+</div>
+<!-- <textarea id="text_add" cols="30" rows="10" >zxvxczxcv</textarea> -->
+
+</div>
+   </div>
+   
+  </form>
+ 
+
+    </div>
+    
+  </body>
+</html>
